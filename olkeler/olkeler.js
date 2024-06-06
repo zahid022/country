@@ -5,10 +5,10 @@ import '/src/style.css'
 const countryContainer = document.getElementById('country-container')
 const moreBtn = document.getElementById('more-btn')
 let x = 12
-let data = await api.getCountry()
 let DATA
- 
+
 async function getData() {
+    let data = await api.getCountry()
     DATA = data.slice(0, x)
     countryContainer.innerHTML = ""
     DATA.map(item => {

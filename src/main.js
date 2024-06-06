@@ -6,7 +6,6 @@ const swiperContainer1 = document.getElementById("swiper-container1")
 const mainAllBtn = document.getElementById("main-all-btn")
 const searchInput = document.getElementById('search-input')
 const countryList = document.getElementById('country-list')
-let data = await api.getCountry()
 let DATA
 
 searchInput.oninput = showCntName
@@ -14,6 +13,7 @@ searchInput.oninput = showCntName
 let population
 
 async function getDataMain() {
+    let data = await api.getCountry()
     population = [...data].sort((b, a) => a.population - b.population).slice(0, 10)
     population.map(item => {
         swiperContainer1.innerHTML += `<div class="swiper-slide px-10 sm:px-0 bg-white">

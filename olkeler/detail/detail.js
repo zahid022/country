@@ -2,7 +2,12 @@ import api from "../../_services/api"
 
 const detailContainer = document.getElementById("detail-container")
 const url = new URLSearchParams(window.location.search)
-let data = await api.getDetail(url.get("params"))
+
+let data
+(async () => {
+    data = await api.getDetail(url.get("params"))
+    getDetailData(...data)
+})();
 
 
 
@@ -31,4 +36,3 @@ async function getDetailData(item){
                                  </div>       
                                 `
 }
-getDetailData(...data)

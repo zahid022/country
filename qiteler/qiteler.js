@@ -3,12 +3,11 @@ import api from "../_services/api";
 const qitelerContainer = document.getElementById('qiteler-container')
 const url = new URLSearchParams(window.location.search)
 let params = url.get("params")
-let data = await api.getCountry()
 let DATA
 
 async function getQitelerData() {
+    let data = await api.getCountry()
     DATA = data.filter(item => item.continents[0] == params)
-    console.log(DATA);
     DATA.map(item => {
         qitelerContainer.innerHTML += `<div class="xl:w-3/12 md:w-4/12 w-6/12 mb-3 px-2 bg-white">
                                             <div class="border pop-card bg-white">
