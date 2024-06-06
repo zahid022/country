@@ -1,6 +1,4 @@
 import api from '../_services/api'
-import '/src/input.css'
-import '/src/style.css'
 
 const countryContainer = document.getElementById('country-container')
 const moreBtn = document.getElementById('more-btn')

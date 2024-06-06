@@ -1,6 +1,4 @@
 import api from '../_services/api'
-import './input.css'
-import './style.css'
 
 const sidebar = document.querySelector(".sidebar")
 const navMenu = document.getElementById("nav-menu")

@@ -1,6 +1,6 @@
 import api from '../_services/api'
-import './input.css'
-import './style.css'
+
+
 
 const swiperContainer1 = document.getElementById("swiper-container1")
 const mainAllBtn = document.getElementById("main-all-btn")
