@@ -1,0 +1,12 @@
+.active-side{
+    opacity: 1 !important;
+    z-index: 999 !important;
+    height: auto !important;
+    transition: .3s !important;
+}
+header{
+    box-shadow: 0 0 5px 1px #888;
+}
+.pop-card{
+    box-shadow: 0 0 10px 1px #333;
+}
